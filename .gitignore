@@ -127,3 +127,6 @@ sympy-plots-for-*.tex/
 
 # LyX tmp files
 *.~lyx
+
+# Compiled Output
+thesis-preparation/output

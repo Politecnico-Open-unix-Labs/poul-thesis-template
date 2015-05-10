@@ -1,0 +1,352 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\options openright
+\use_default_options false
+\master ../tesi.lyx
+\maintain_unincluded_children false
+\language italian
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Indice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Questi sono suggerimenti molto personali, si possono anche ignorare completament
+e.
+\end_layout
+
+\begin_layout Section
+Gestire la bibliografia
+\end_layout
+
+\begin_layout Standard
+Gestire tante risorse bibliografiche modificando a mano un file bibtex è
+ molto noioso, è meglio usare qualcosa che è in grado di organizzare tutte
+ i fonti.
+ Sfortunatamente LyX non ha un sistema facile per farlo.
+ È comunque possibile utilizzare altri programmi che automagicamente organizzano
+ molti paper.
+\end_layout
+
+\begin_layout Standard
+Ci sono due famosi programmi, 
+\family sans
+referencer
+\family default
+ e 
+\family sans
+JabRef
+\family default
+ (
+\family typewriter
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://launchpad.net/referencer
+\end_layout
+
+\end_inset
+
+
+\family default
+, 
+\family sans
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://jabref.sourceforge.net/
+\end_layout
+
+\end_inset
+
+
+\family default
+), entrambi hanno molto funzionalità utili, le più importanti sono
+\end_layout
+
+\begin_layout Itemize
+copia di riferimenti 
+\family sans
+bibtex
+\family default
+ dagli appunti
+\end_layout
+
+\begin_layout Itemize
+organizzazione dei riferimenti con etichette
+\end_layout
+
+\begin_layout Itemize
+possibilità di associare un 
+\family sans
+pdf
+\family default
+ ad ogni riferimento
+\end_layout
+
+\begin_layout Itemize
+il pulsante Cita in LyX
+\end_layout
+
+\begin_layout Section
+Revisioni
+\end_layout
+
+\begin_layout Standard
+Il relatore revisionerà la tesi e verosimilmente lo farà annotando dei commenti
+ e delle correzioni su un pdf.
+ Queste correzioni sono difficili da integrare principalmente perché bisogna
+ spendere un sacco di tempo cercando dove modificare il proprio documento.
+ LyX supporta un sistema molto avanzato per la revisione dei documenti,
+ 
+\end_layout
+
+\begin_layout Standard
+Dove 
+\change_deleted -898145728 1394988536
+tu avere 
+\change_inserted -898145728 1394988538
+hai 
+\change_unchanged
+imparato a scrivere?
+\end_layout
+
+\begin_layout Standard
+La derivata di 
+\begin_inset Formula $e^{x}$
+\end_inset
+
+ è 
+\begin_inset Formula $e^{2x}$
+\end_inset
+
+.
+\change_inserted -898145728 1394988545
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -898145728 1394988589
+ne sei proprio sicuro?
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+
+\change_deleted -898145728 1394988562
+Secondo me
+\change_inserted -898145728 1394988576
+Dopo aver considerato tutte le altre soluzioni
+\change_unchanged
+ questo è il metodo più efficiente per determinare la lunghezza media della
+ criniera del cavallo.
+\end_layout
+
+\begin_layout Standard
+Il risultato mostra che il primo metodo è decisamente migliore rispetto
+ al secondo.
+\change_inserted -898145728 1394988583
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\change_inserted -898145728 1394988602
+spiegare perché il primo metodo è migliore
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
+L'integrazione di queste revisioni è molto più semplice di quelle dentro
+ delle annotazioni di un pdf.
+ Purtroppo bisogna convincere il proprio relatore nell'adottare questo metodo,
+ può valerne la pena provarci.
+\end_layout
+
+\begin_layout Standard
+Questa funzione è chiamata 
+\family sans
+Tracciamento modifiche
+\family default
+, c'è una toolbar dedicata che è possibile visualizzare attivando l'opzione
+ Traccia modifiche (
+\family sans
+Documento
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Tracciamento modifiche \SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Attivato
+\family default
+ oppure semplicemente 
+\family sans
+CTRL + SHIFT + E
+\family default
+).
+ Questo documento ha l'opzione Tracciamento modifiche già attivata.
+\end_layout
+
+\begin_layout Section
+Presentazione finale
+\end_layout
+
+\begin_layout Standard
+Una volta scritta la tesi poi bisogna preparare una presentazione.
+ Le tempistiche sono cruciali.
+ Si ha a disposizione da 
+\begin_inset Formula $15$
+\end_inset
+
+ a 
+\begin_inset Formula $20$
+\end_inset
+
+ minuti per presentare il lavoro di mesi.
+ Uno strumento molto utile che si può usare durante la presentazione è 
+\family sans
+pdfpc
+\family default
+ (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://davvil.github.io/pdfpc/
+\end_layout
+
+\end_inset
+
+).
+ Usando questo programma sullo schermo del portatile si avranno a disposizione
+ altre informazioni che non sono visualizzate sul monitor esterno.
+ Queste informazioni sono
+\end_layout
+
+\begin_layout Description
+Tempo
+\begin_inset space ~
+\end_inset
+
+rimanente è possibile impostare la durata della presentazione e vedere quanti
+ minuti e secondi rimangono
+\end_layout
+
+\begin_layout Description
+Slide
+\begin_inset space ~
+\end_inset
+
+successiva è possibile vedere la slide corrente e la slide successiva
+\end_layout
+
+\begin_layout Description
+Annotazioni è possibile vedere le annotazioni inserite all'interno della
+ presentazione
+\end_layout
+
+\begin_layout Standard
+Questo programma è molto utile, ma non bisogna mai dimenticarsi dell'effetto
+ demo.
+ È NECESSARIO provare il programma prima di pensare di usarlo per la presentazio
+ne.
+\end_layout
+
+\begin_layout Standard
+Per installare il programma su Linux il nome del pacchetto è tipicamente
+ 
+\family sans
+pdf-presenter-console
+\family default
+, per gli altri sistemi operativi ci sono indicate le istruzioni sul sito
+ del programma.
+\end_layout
+
+\end_body
+\end_document

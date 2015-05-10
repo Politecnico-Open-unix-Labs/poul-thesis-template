@@ -1,0 +1,687 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\options openright
+\use_default_options false
+\master ../tesi.lyx
+\maintain_unincluded_children false
+\language italian
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Indice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Questi sono suggerimenti di stile per personalizze e abbellire la tesi.
+\end_layout
+
+\begin_layout Section
+Font
+\end_layout
+
+\begin_layout Standard
+Un importante modifica stilistica che è possibile fare è il cambio del font.
+ Quello di default è Computer Modern che è ok, ma ce ne sono altri che possono
+ essere usati.
+ È possibile cambiare il font nelle proprietà del documento (
+\family sans
+Documento
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Impostazioni
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Preambolo LaTeX
+\family default
+).
+ Non tutti i font possono essere usati compilando LaTeX con 
+\family sans
+pfdlatex
+\family default
+, con alcuni è necessario renderizzare il pdf con XeLaTeX oppure LuaLaTeX.
+ Nella Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:stili-font"
+
+\end_inset
+
+ sono mostrati due diversi esempi di combinazioni di font.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename immagini/latin-modern-font.pdf
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename immagini/combinazione-carina-font.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:stili-font"
+
+\end_inset
+
+Due diversi stili di font
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+I font utilizzati sono riassunti nella Tabella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:nomi-font"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:nomi-font"
+
+\end_inset
+
+Font usati nei due esempi mostrati prima
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Serif
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Latin Modern Roman Unslanted
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gentium
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Sans Serif
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Latin Modern Sans Demi Condensed
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verdana
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Typewriter
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Latin Modern Mono Slanted
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Inconsolata
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Se, guardando il 
+\family sans
+pdf
+\family default
+ finale, le lettere sembrano fatte male e zoomando si vedono come degli
+ artefatti bisogna controllare le proprietà del 
+\family sans
+pdf
+\family default
+, in particolare il tipo dei font usati (come farlo dipende dal particolare
+ visualizzatore di 
+\family sans
+pdf
+\family default
+ utilizzato, usando Linux esiste il comando 
+\family sans
+pdffonts
+\family default
+).
+ Se il 
+\family sans
+pdf
+\family default
+ ha dei font 
+\family sans
+Type 3
+\family default
+ questo è il motivo per cui le lettere sono brutte.
+ È meglio usare font 
+\family sans
+Type 1
+\family default
+, usando Linux è possibile risolvere il problema installando il pacchetto
+ 
+\family sans
+cm-super
+\family default
+.
+\end_layout
+
+\begin_layout Section
+Header dei capitoli fancy
+\end_layout
+
+\begin_layout Standard
+L'header dei capitoli può essere personalizzato a piacimento, questo richiede
+ lo scrivere di un po' di righe di codice LaTeX per avere un risultato carino.
+ In alternativa c'è un pacchetto che fornisce una serie di stili predefiniti,
+ 
+\family sans
+fncychap
+\family default
+ (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/pkg/fncychap
+\end_layout
+
+\end_inset
+
+).
+ Nella Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:headers-fancy"
+
+\end_inset
+
+ sono mostrati solo due esempi di stili offerti dal pacchetto.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename immagini/header-pagina-carino-1.pdf
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Stile Lenny
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename immagini/header-pagina-carino-2.pdf
+	width 60col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Stile Conny
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:headers-fancy"
+
+\end_inset
+
+Due possibili stili per l'header dei capitoli
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Capolettera fancy
+\end_layout
+
+\begin_layout Standard
+Un'altra cosa che può essere abbellita sono i capilettera.
+ Questa è una modifica molto semplice che può aggiungere un tocco personale
+ ad ogni capitolo.
+ C'è un pacchetto che permette di personalizzare i capilettera, 
+\family sans
+lettrine
+\family default
+ (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/pkg/lettrine
+\end_layout
+
+\end_inset
+
+).
+ Ci sono molte opzioni per creare il proprio stile personale per ogni capoletter
+a, nella Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:capilettera"
+
+\end_inset
+
+ sono mostrati due possibili esempi di capilettera.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename immagini/lettrine.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:capilettera"
+
+\end_inset
+
+Due esempi di capilettera
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Headers fancy
+\end_layout
+
+\begin_layout Standard
+Gli header fancy sono già utilizzati all'interno di questo template ma è
+ possibile cambiarne lo stile.
+ Il pacchetto utilizzato per creare gli header fancy è 
+\family sans
+fancyhdr
+\family default
+ (
+\family sans
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/pkg/fancyhdr
+\end_layout
+
+\end_inset
+
+
+\family default
+).
+ Ci sono tantissime opzioni.
+ Questo template utilizza praticamente lo stile standard ma può essere cambiato.
+ Per esempio, è possibile spostare il numero della pagina dell'header basso
+ in quello alto, oppure rimuovere la barra orizzontale nell'header, oppure
+ \SpecialChar \ldots{}
+ .
+  In questo template gli header fancy sono impostati nel preambolo LaTeX
+ del documento (
+\family sans
+Documento
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Impostazioni \SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Preambolo LaTeX
+\family default
+) e prima del capitolo Introduzione con del di codice LaTeX.
+\end_layout
+
+\begin_layout Section
+Altre classi per il documento
+\end_layout
+
+\begin_layout Standard
+Questo template utilizza la classe libro, ce ne sono altre più avanzate
+ che hanno una serie di interessanti funzionalità come quelle offerte da
+ 
+\family sans
+koma-script
+\family default
+ or 
+\family sans
+memoir
+\family default
+ (
+\family sans
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/pkg/koma-script
+\end_layout
+
+\end_inset
+
+
+\family default
+, 
+\family sans
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/pkg/memoir
+\end_layout
+
+\end_inset
+
+
+\family default
+).
+\end_layout
+
+\begin_layout Standard
+LyX supporta un discreto numero di classi alternativa, però per sfruttare
+ al massimo le loro funzionalità è necessario scrivere del codice LaTeX.
+ Nel caso in cui si voglia personalizzare molto la propria tesi forse è
+ meglio cominciare a considerare di scriverla direttamente in LaTeX piuttosto
+ che usare LyX.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,98 @@
+@@ -34,14 +34,12 @@
+ 
+ % fancy headers for the thesis
+ \fancyhead{}
+-\fancyhead[LE]{\slshape \nouppercase \leftmark}
++\fancyhead[LO]{}
+ \fancyhead[RO]{\slshape \nouppercase \rightmark}
+-\fancyfoot[EC]{\begin{flushleft}\thepage\end{flushleft}}
+ \fancyfoot[OC]{\begin{flushright}\thepage\end{flushright}}
+ \renewcommand{\headrulewidth}{0.4pt}
+ \setlength{\headheight}{14pt}
+ \end_preamble
+-\options openright
+ \use_default_options false
+ \maintain_unincluded_children false
+ \language english
+@@ -91,7 +89,7 @@
+ \shortcut idx
+ \color #008000
+ \end_index
+-\leftmargin 4cm
++\leftmargin 3.5cm
+ \topmargin 3cm
+-\rightmargin 3cm
++\rightmargin 3.5cm
+ \bottommargin 3.5cm
+@@ -101,7 +99,7 @@
+ \paragraph_indentation default
+ \quotes_language french
+ \papercolumns 1
+-\papersides 2
++\papersides 1
+ \paperpagestyle default
+ \tracking_changes false
+ \output_changes false
+@@ -297,7 +295,7 @@
+ \end_layout
+ 
+ \begin_layout Standard
+-\begin_inset Newpage cleardoublepage
++\begin_inset Newpage clearpage
+ \end_inset
+ 
+ 
+@@ -316,7 +314,7 @@
+ 
+ \emph default
+ 
+-\begin_inset Newpage cleardoublepage
++\begin_inset Newpage clearpage
+ \end_inset
+ 
+ 
+@@ -347,7 +345,7 @@
+ \end_inset
+ 
+ 
+-\begin_inset Newpage cleardoublepage
++\begin_inset Newpage clearpage
+ \end_inset
+ 
+ 
+@@ -378,7 +376,7 @@
+ \end_inset
+ 
+ 
+-\begin_inset Newpage cleardoublepage
++\begin_inset Newpage clearpage
+ \end_inset
+ 
+ 
+@@ -409,7 +407,7 @@
+ \end_inset
+ 
+ 
+-\begin_inset Newpage cleardoublepage
++\begin_inset Newpage clearpage
+ \end_inset
+ 
+ 
+@@ -461,7 +459,7 @@
+ \end_inset
+ 
+ 
+-\begin_inset Newpage cleardoublepage
++\begin_inset Newpage clearpage
+ \end_inset
+ 
+ 
+@@ -865,7 +863,7 @@
+ \end_inset
+ 
+ 
+-\begin_inset Newpage cleardoublepage
++\begin_inset Newpage clearpage
+ \end_inset
+ 
+ 

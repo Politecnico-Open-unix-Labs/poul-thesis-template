@@ -1,0 +1,2364 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\options openright
+\use_default_options false
+\master ../thesis.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Indice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+These are general tips about few LaTeX and LyX functionalities.
+\end_layout
+
+\begin_layout Section
+Copy and paste raw LaTeX code
+\end_layout
+
+\begin_layout Standard
+Sometimes it is necessary to insert raw LaTeX code in your document, LyX
+ has a dedicated environment for that (
+\family sans
+Insert
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Tex code
+\family default
+).
+ By using the paste command (
+\family sans
+CTRL + V
+\family default
+) to copy text into that type of environment, you get as result that everything
+ is copied in a single line, all the carriage returns are ignored.
+ To paste exactly what you have copied, use the special paste command which
+ preserves the text formatting (
+\family sans
+CTRL + SHIFT + V
+\family default
+ or 
+\family sans
+Edit
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+ Paste Special \SpecialChar \menuseparator
+Plain Text
+\family default
+).
+\end_layout
+
+\begin_layout Section
+Labels and cross-references
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:label-and-cross"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Labels are necessary to add cross-references in your thesis, use a label
+ for each element that you have to reference to (
+\family sans
+Insert
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Label/Cross-reference
+\family default
+).
+ These elements are manly chapters, sections, subsections, figures, tables
+ and algorithms.
+\end_layout
+
+\begin_layout Standard
+This is Chapter 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:second-chapter"
+
+\end_inset
+
+, Section 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:label-and-cross"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Figures
+\end_layout
+
+\begin_layout Standard
+Figures, but also tables and algorithms, must be placed inside a floating
+ environment.
+ This type of LaTeX environment is very useful and automagically mix up
+ text and images.
+ Usually the 
+\family sans
+Here if possible
+\family default
+ placement option is good for all images (right click on 
+\family sans
+float: Figure
+\family default
+ then 
+\family sans
+Settings
+\family default
+).
+ However, if the figure is not placed correctly you may enable the 
+\family sans
+Ignore LaTeX rules
+\family default
+ option, usually that option solves every problem.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:image"
+
+\end_inset
+
+ shows an example of a very nice animal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/flamingo.jpg
+	lyxscale 50
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Short caption of the figure
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:image"
+
+\end_inset
+
+Detailed caption of this marvelous animal
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+A rarely known feature of LyX is the possibility to add the short caption.
+ The short caption is the description of the figure used in the 
+\family sans
+List of Figures
+\family default
+ section.
+ Sometimes captions can be very long, in this case it is better to use a
+ shorter one that is more readable in the page that lists all the figures.
+ To add this caption, right click on the description of figure, then 
+\family sans
+Insert short title
+\family default
+.
+\end_layout
+
+\begin_layout Standard
+It is not mandatory to add the short caption, it is only useful with very
+ long captions to ensure a better legibility of the 
+\family sans
+List of Figures
+\family default
+ section.
+\end_layout
+
+\begin_layout Subsection
+Subfigures
+\end_layout
+
+\begin_layout Standard
+A very cool feature of LaTeX's figures is the possibility to have subfigures.
+ For example, if there are two figures that represent the result of a test
+ executed with two different values of a parameter, then a subfigure is
+ a good way to organize the images.
+\end_layout
+
+\begin_layout Standard
+Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:subfig-fauna"
+
+\end_inset
+
+ is an example of these subfigures.
+ References can be added to either the whole figure (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:subfig-fauna"
+
+\end_inset
+
+) or each subfigure (Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fauna-squirrel"
+
+\end_inset
+
+ and Figure 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:fauna-peacock"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/squirrel.jpg
+	lyxscale 50
+	width 45col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fauna-squirrel"
+
+\end_inset
+
+A nice squirrel
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/peacock.jpg
+	lyxscale 50
+	width 45col%
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:fauna-peacock"
+
+\end_inset
+
+A beautiful peacock
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:subfig-fauna"
+
+\end_inset
+
+Fauna
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Tables
+\end_layout
+
+\begin_layout Standard
+The caption of tables must be placed before the table itself and not after.
+ As for figures, tables can have a short caption that is used in the 
+\family sans
+List of Tables
+\family default
+ section.
+\end_layout
+
+\begin_layout Standard
+Academic publications, but also thesis, often use the so-called 
+\begin_inset Quotes fld
+\end_inset
+
+formal table
+\begin_inset Quotes frd
+\end_inset
+
+, an example of these particular style is showed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:formal-table"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Short caption of the table
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:formal-table"
+
+\end_inset
+
+Detailed caption of this beautiful table
+\end_layout
+
+\end_inset
+
+
+\size small
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Category
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+first
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+second
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Number
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Complexity
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Item A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\beta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Omega\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Item B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Omega\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+To set this particular style, right click in a cell of the table then 
+\family sans
+More
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Settings
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Border
+\family default
+, here you can select the formal style.
+\end_layout
+
+\begin_layout Subsection
+Wide tables
+\end_layout
+
+\begin_layout Standard
+Sometimes tables are too wide for the column's width of the page.
+ Rather than changing the table's content you can shrink it to fit the available
+ space.
+ The font size will be smaller but this is, in general, a good method to
+ fix too wide tables such as Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:wide-table"
+
+\end_inset
+
+, the result is showed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:wide-table-shrunk"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:wide-table"
+
+\end_inset
+
+This table is very wide
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Method
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parameter one
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parameter two
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parameter three
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parameter four
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $9$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $11$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:wide-table-shrunk"
+
+\end_inset
+
+This table is shrunk to fit the column's width
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+resizebox{
+\backslash
+linewidth}{!}{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Method
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parameter one
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parameter two
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parameter three
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Parameter four
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+A
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+B
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $5$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $9$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $11$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another solution is to set the width of table's columns.
+ To set it, right click in a cell of the table then 
+\family sans
+More
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Settings
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+Table settings
+\family default
+, here you can set the width.
+\end_layout
+
+\begin_layout Subsection
+Space between rows
+\end_layout
+
+\begin_layout Standard
+Another common problem with tables is when rows of the table are too close
+ together, this problem is very frequent when rows contain mathematical
+ expressions such as Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:math-table"
+
+\end_inset
+
+.
+ With a simple command it is possible to increase the space between rows
+ as showed in Table 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:math-table-big-rows"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:math-table"
+
+\end_inset
+
+This table is a bit tight
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Formula
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gaussian integral
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\int_{0}^{+\infty}e^{-\frac{x^{2}}{2}}\text{dx}=\frac{1}{2}\sqrt{\frac{\pi}{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Taylor series
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum_{n=0}^{\infty}\frac{f^{\left(n\right)}\left(a\right)}{n!}\left(x-a\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:math-table-big-rows"
+
+\end_inset
+
+Math cheatsheet
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand*{
+\backslash
+arraystretch}{1.5}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="2">
+<features booktabs="true" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Name
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+Formula
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Gaussian integral
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $ $
+\end_inset
+
+
+\begin_inset Formula $\int_{0}^{+\infty}e^{-\frac{x^{2}}{2}}\text{dx}=\frac{1}{2}\sqrt{\frac{\pi}{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Taylor series
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sum_{n=0}^{\infty}\frac{f^{\left(n\right)}\left(a\right)}{n!}\left(x-a\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Algorithms
+\end_layout
+
+\begin_layout Standard
+If you have to add some algorithms there is a dedicated LyX environment.
+ As for tables, the caption of an algorithm must be placed before the pseudo
+ code of the algorithm, short captions can be used also for algorithm.
+ This placement of the caption may sound strange but is justified by the
+ fact that algorithms, but also tables, are read from the top down, so the
+ description must be placed before the content.
+ On the other side, figures are viewed like a painting, so the description
+ must be placed below the content.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Enumerate
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Short caption of the algorithm
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:the-algorithm"
+
+\end_inset
+
+Detailed caption of this complicated algorithm
+\end_layout
+
+\end_inset
+
+Wake up
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+drink a coffee
+\end_layout
+
+\begin_layout Enumerate
+brush your teeth
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Go to work
+\end_layout
+
+\begin_layout Enumerate
+Come back home
+\end_layout
+
+\begin_layout Enumerate
+Go to sleep
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Unfortunately LyX does not support algorithm commands offered by some LaTeX
+ packages (
+\family typewriter
+
+\backslash
+If
+\family default
+, 
+\family typewriter
+
+\backslash
+While
+\family default
+, \SpecialChar \ldots{}
+) out of the box.
+ It is possible to use custom modules to handle those commands or use the
+ 2.1 beta version that supports some of them but, as for now, it is better
+ to write directly LaTeX code.
+ This template uses the 
+\family sans
+algorithmicx
+\family default
+ package, refer to the manual of that package (
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.ctan.org/pkg/algorithmicx
+\end_layout
+
+\end_inset
+
+) for the documentation of all the commands.
+ Algorithm 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "alg:best-algorithm-ever"
+
+\end_inset
+
+ shows an example of the usage of some commands of the 
+\family sans
+algorithmicx
+\family default
+ package.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:best-algorithm-ever"
+
+\end_inset
+
+Best algorithm ever
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}[1]
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+State $s 
+\backslash
+gets 
+\backslash
+texttt{ALIVE}$ 
+\backslash
+Comment{Day of birth}
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+While{$ s 
+\backslash
+neq 
+\backslash
+texttt{EOL}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+Repeat 
+\backslash
+Comment{Early morning, possibly}
+\end_layout
+
+\begin_layout Plain Layout
+
+			
+\backslash
+State Try to wake up
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+Until{$s = 
+\backslash
+texttt{SLEEP}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State Drink a coffe 
+\backslash
+Comment{Even more than one}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State Brush your teeth
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State Go to work 
+\backslash
+Comment{With a smile on your face}
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State Come back home
+\end_layout
+
+\begin_layout Plain Layout
+
+		
+\backslash
+State Go to sleep
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+EndWhile
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Source code
+\end_layout
+
+\begin_layout Standard
+You may need to add some pieces of source code that you have written.
+ LyX uses 
+\family sans
+listings
+\family default
+ package to provide a customized environment to insert source code (
+\family sans
+Insert
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+ Program Listing
+\family default
+).
+ Listings can have a caption, but LyX does not add it by default, if you
+ want you can insert it (place the cursor inside the listing environment,
+ then 
+\family sans
+Insert \SpecialChar \menuseparator
+ Caption
+\family default
+).
+\end_layout
+
+\begin_layout Standard
+By default, the result that you get is pretty ugly as you can see in the
+ Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:ugly-code"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:ugly-code"
+
+\end_inset
+
+Program that computes your degree mark
+\end_layout
+
+\end_inset
+
+#include <stdlib.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <stdio.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/**
+\end_layout
+
+\begin_layout Plain Layout
+
+ * Main program
+\end_layout
+
+\begin_layout Plain Layout
+
+ */
+\end_layout
+
+\begin_layout Plain Layout
+
+int main(int argc, char *argv[])
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	long double degree_mark = 0x42 * 042 * 0b00101010 * 0.001167;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	printf("Congratulations for your degree
+\backslash
+n");
+\end_layout
+
+\begin_layout Plain Layout
+
+	printf("Your mark is %-3.0LfL
+\backslash
+n", degree_mark);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	return EXIT_SUCCESS;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+You need to set a couple of options (right click inside the source code
+ environment, then 
+\family sans
+Settings
+\family default
+) to get a good looking result.
+ The most important options are
+\end_layout
+
+\begin_layout Description
+Font
+\begin_inset space ~
+\end_inset
+
+style use a fixed-length font (
+\family sans
+Font Family: Typewriter
+\family default
+), it is useful to set a 
+\family sans
+Small
+\family default
+ font size to compact large pieces of source code.
+ Breaking long lines is very important as well as hiding nasty spaces (check
+ 
+\family sans
+Break long lines
+\family default
+ option, uncheck 
+\family sans
+Space as symbol
+\family default
+ and 
+\family sans
+Space in strings as symbol
+\family default
+ options, set 
+\family sans
+Tabular size
+\family default
+ to 
+\begin_inset Formula $4$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Description
+Line
+\begin_inset space ~
+\end_inset
+
+numbering having the line numbering active is useful if you have to refer
+ to a particular statement when you are describing you code
+\end_layout
+
+\begin_layout Description
+Language setting the proper language is important to have the correct syntax
+ highlighting
+\end_layout
+
+\begin_layout Standard
+The Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:beautiful-code"
+
+\end_inset
+
+ has the same code as the Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:ugly-code"
+
+\end_inset
+
+ but it has all the options mentioned before adjusted, the result is way
+ better that the other.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true,commentstyle={\color{purple!60!black}},extendedchars=true,identifierstyle={\color{blue!50!black}},keywordstyle={\bfseries\color{green!50!black}},language=C,numbers=left,numberstyle={\footnotesize},showstringspaces=false,stringstyle={\color{orange!40!black}},tabsize=4,xleftmargin=2em"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:beautiful-code"
+
+\end_inset
+
+Program that computes your degree mark
+\end_layout
+
+\end_inset
+
+#include <stdlib.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+#include <stdio.h>
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+/**
+\end_layout
+
+\begin_layout Plain Layout
+
+ * Main program
+\end_layout
+
+\begin_layout Plain Layout
+
+ */
+\end_layout
+
+\begin_layout Plain Layout
+
+int main(int argc, char *argv[])
+\end_layout
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+	long double degree_mark = 0x42 * 042 * 0b00101010 * 0.001167;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	printf("Congratulations for your degree
+\backslash
+n");
+\end_layout
+
+\begin_layout Plain Layout
+
+	printf("Your mark is %-3.0LfL
+\backslash
+n", degree_mark);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	return EXIT_SUCCESS;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If you have to insert more than one piece of code it can be useful to copy
+ the previously created environment and then modify it.
+ This saves you from setting the options every time you insert a new listing.
+\end_layout
+
+\begin_layout Section
+URLs
+\end_layout
+
+\begin_layout Standard
+LyX has a dedicated command to insert URLs (
+\family sans
+Insert \SpecialChar \menuseparator
+ URL
+\family default
+) that must be used to insert each URL.
+ The environment automatically uses a typewrite font for the text, inserts
+ a hyperlink to the URL and, most importantly, breaks long URLs in multiple
+ lines.
+\end_layout
+
+\begin_layout Standard
+This is a URL added as simple text, http://this.is.not.the.correct.way.to.add.urls.in.lyx.d
+ocuments.html.
+\end_layout
+
+\begin_layout Standard
+This is a URL created with the 
+\family sans
+url
+\family default
+ command, 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://this.is.the.correct.way.to.add.urls.in.lyx.documents.html
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+The 
+\family sans
+url
+\family default
+ environment can be manually used, for example, in the bibliography where
+ URLs are not handled in a dedicated way.
+ The Listing 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "lis:urls-bibliography"
+
+\end_inset
+
+ shows how to use the url command in the bibliography.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\small\ttfamily},breaklines=true,commentstyle={\color{purple!60!black}},extendedchars=true,identifierstyle={\color{blue!50!black}},keywordstyle={\bfseries\color{green!50!black}},language=TeX,numbers=left,numberstyle={\footnotesize},showstringspaces=false,stringstyle={\color{orange!40!black}},tabsize=4,xleftmargin=2em"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "lis:urls-bibliography"
+
+\end_inset
+
+How to insert URLs in the bibliography
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% this URL will not be broken into multiple lines and
+\end_layout
+
+\begin_layout Plain Layout
+
+% will NOT have a hyperlink
+\end_layout
+
+\begin_layout Plain Layout
+
+@article{
+\end_layout
+
+\begin_layout Plain Layout
+
+    ...
+\end_layout
+
+\begin_layout Plain Layout
+
+    howpublished = {http://google.com}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% this URL WILL be broken into multiple lines and
+\end_layout
+
+\begin_layout Plain Layout
+
+% WILL have a hyperlink
+\end_layout
+
+\begin_layout Plain Layout
+
+@article{
+\end_layout
+
+\begin_layout Plain Layout
+
+    ...
+\end_layout
+
+\begin_layout Plain Layout
+
+    howpublished = {
+\backslash
+url{http://google.com}}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+LyX's guides
+\end_layout
+
+\begin_layout Standard
+LyX has a series of guides that describe all its features, if want to exploit
+ all the available functionalities you need to read them.
+ Those manuals are available directly in LyX (for example, 
+\family sans
+Help
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+ Embedded Objects
+\family default
+).
+\end_layout
+
+\end_body
+\end_document

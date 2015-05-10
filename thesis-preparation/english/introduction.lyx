@@ -1,0 +1,175 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\options openright
+\use_default_options false
+\master thesis.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Indice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+L’introduzione deve essere atomica, quindi non deve contenere né sottosezioni
+ né paragrafi né altro.
+ Il titolo, il sommario e l’introduzione devono sembrare e e delle scatole
+ cinesi, nel senso che lette in quest’ordine devono progressivamente svelare
+ informazioni sul contenuto per incatenare l’attenzione del lettore e indurlo
+ a leggere l’opera fino in fondo.
+ L’introduzione deve essere tripartita, non graficamente ma logicamente.
+\end_layout
+
+\end_inset
+
+
+\emph on
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Inquadramento generale
+\end_layout
+
+\begin_layout Plain Layout
+La prima parte contiene una frase che spiega l’area generale dove si svolge
+ il lavoro; una che spiega la sottoarea più specifica dove si svolge il
+ lavoro e la terza, che dovrebbe cominciare con le seguenti parole 
+\begin_inset Quotes fld
+\end_inset
+
+lo scopo della tesi è \SpecialChar \ldots{}
+
+\begin_inset Quotes frd
+\end_inset
+
+, illustra l’obbiettivo del lavoro.
+ Poi vi devono essere una o due e frasi che contengano una breve spiegazione
+ di cosa e come è stato fatto, e delle attività sperimentali, dei risultati
+ ottenuti con una valutazione e degli a sviluppi futuri.
+ La prima parte deve essere circa una facciata e mezza o due.
+\end_layout
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Breve descrizione del lavoro
+\end_layout
+
+\begin_layout Plain Layout
+La seconda parte deve essere una esplosione della prima e deve quindi mostrare
+ in maniera pi` esplicita l’area dove si svolge il lavoro, le fonti u bibliograf
+iche pi` importanti su cui si fonda il lavoro in maniera sintetica u (una
+ pagina) evidenziando i lavori in letteratura che presentano attinenza con
+ il lavoro affrontato in modo da mostrare da dove e perché è sorta la tematica
+ di studio.
+ Poi si mostrano esplicitamente le realizzazioni, le direttive future di
+ ricerca, quali sono i problemi aperti e quali quelli affrontati e si ripete
+ lo scopo della tesi.
+ Questa parte deve essere piena di citazioni bibliografiche e deve essere
+ lunga circa 4 facciate.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+Struttura della tesi
+\end_layout
+
+\begin_layout Plain Layout
+La terza parte contiene la descrizione della struttura della tesi ed è organizza
+ta nel modo seguente.
+ 
+\begin_inset Quotes fld
+\end_inset
+
+La tesi è strutturata nel modo seguente
+\begin_inset Quotes frd
+\end_inset
+
+.
+ Nella sezione due si mostra\SpecialChar \ldots{}
+, nella sezione tre si illustra\SpecialChar \ldots{}
+ .
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

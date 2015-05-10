@@ -1,0 +1,886 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\begin_preamble
+% additional packages
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{amsthm}
+\usepackage{rotating}
+\usepackage{caption}
+\usepackage{epsfig}
+\usepackage{indentfirst}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{cite}
+\usepackage[normalem]{ulem}
+\usepackage[table]{xcolor}
+\usepackage{booktabs}
+\usepackage{algpseudocode}
+
+% this is a dirty fix for LTS version of Ubuntu/Kubuntu that has a
+% very outdated "geometry" package
+\include{geometry.sty}
+
+% fixes the page number of the first page of each chapter
+\fancypagestyle{plain}{
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[OC]{\begin{flushright}\thepage\end{flushright}}
+}
+
+% fancy headers for the thesis
+\fancyhead{}
+\fancyhead[LE]{\slshape \nouppercase \leftmark}
+\fancyhead[RO]{\slshape \nouppercase \rightmark}
+\fancyfoot[EC]{\begin{flushleft}\thepage\end{flushleft}}
+\fancyfoot[OC]{\begin{flushright}\thepage\end{flushright}}
+\renewcommand{\headrulewidth}{0.4pt}
+\setlength{\headheight}{14pt}
+\end_preamble
+\options openright
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package babel
+\inputencoding auto
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing onehalf
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Indice
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 4cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This template is the result of collecting a lot of resources about how to
+ structure and write a thesis.
+ The result is far from being the perfect template, but it should be a good
+ starting point to simplify the tedious work of layout a thesis.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size large
+Template structure
+\end_layout
+
+\begin_layout Plain Layout
+The template is composed by several files.
+ The idea is that each part of the thesis has a dedicated LyX file (
+\family sans
+introduction.lyx
+\family default
+, 
+\family sans
+abstract.lyx
+\family default
+, \SpecialChar \ldots{}
+) that you can edit independently.
+ 
+\family sans
+thesis.lyx
+\family default
+ is used to organize all the parts into a single document.
+ Each chapter has its own folder to better organize the external resources
+ that you may include (images, pdfs, \SpecialChar \ldots{}
+).
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size large
+What you have to modify in this template
+\end_layout
+
+\begin_layout Plain Layout
+This template does not have your personal information, in addition to the
+ thesis's body you have to
+\end_layout
+
+\begin_layout Itemize
+modify the 
+\family sans
+title-page
+\family default
+ document with all your personal and thesis information
+\end_layout
+
+\begin_layout Itemize
+add your personal information and the thesis's title in the property of
+ this pdf (
+\family sans
+Document
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+ Properties
+\family default
+ 
+\family sans
+\SpecialChar \menuseparator
+
+\family default
+ 
+\family sans
+PDF Properties
+\family default
+)
+\end_layout
+
+\begin_layout Itemize
+rename the chapters and remove the ones that you do not use
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size large
+References
+\end_layout
+
+\begin_layout Plain Layout
+The layout of the thesis follows the guidelines indicated by Polimi's library
+ (
+\family sans
+http://www.tedoc.polimi.it/download/PoliTesi_Istruzioni.pdf
+\family default
+).
+\end_layout
+
+\begin_layout Plain Layout
+Guidelines for Abstract, Introduction and Conclusions are from a template
+ written by Matteo Matteucci (
+\family sans
+http://airwiki.ws.dei.polimi.it/images/3/3c/SchemaTesi.tgz
+\family default
+).
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size large
+Some useful links
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+http://www.tedoc.polimi.it/tesilaurea/Consegna-tesi-di-laurea-(vecchio-ordinamento-
+e-specialistica)
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+http://airwiki.ws.dei.polimi.it/index.php/Suggestions_to_write_well
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+frontmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newgeometry{margin=3cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "title-page/title-page.lyx"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+restoregeometry
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align right
+
+\emph on
+\begin_inset CommandInset include
+LatexCommand input
+filename "dedication.lyx"
+
+\end_inset
+
+
+\emph default
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Acknowledgments
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "acknowledgments.lyx"
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Abstract
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "abstract.lyx"
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Sommario
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "sommario.lyx"
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{page}{1}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagestyle{fancy}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\begin_inset FloatList table
+
+\end_inset
+
+
+\begin_inset FloatList algorithm
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+mainmatter
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+sectionmark}[1]{
+\backslash
+markright{
+\backslash
+thesection.
+\backslash
+ #1}}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+renewcommand{
+\backslash
+chaptermark}[1]{
+\backslash
+markboth{
+\backslash
+thechapter.
+\backslash
+ #1}{}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Introduction
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:introduction"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Introduction}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+markboth{Introduction}{Introduction}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "introduction.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+First chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:first-chapter"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-1/chapter-1.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Second chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:second-chapter"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-2/chapter-2.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Third chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:third-chapter"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-3/chapter-3.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Fourth chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:fourth-chapter"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-4/chapter-4.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Fifth chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:fifth-chapter"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-5/chapter-5.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Sixth chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:sixth-chapter"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-6/chapter-6.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Seventh chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:seventh-chapter"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-7/chapter-7.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Eighth chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:eighth-chapter"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-8/chapter-8.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Ninth chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:ninth-chapter"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "chapter-9/chapter-9.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Conclusions
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:conclusion"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Conclusions}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+markboth{Conclusions}{Conclusions}
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset include
+LatexCommand input
+filename "conclusions.lyx"
+
+\end_inset
+
+
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "bibliography"
+options "plain"
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{Bibliography}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\start_of_appendix
+First appendix
+\begin_inset CommandInset label
+LatexCommand label
+name "app:first-appendix"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "appendix-a/appendix-a.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Second appendix
+\begin_inset CommandInset label
+LatexCommand label
+name "app:second-appendix"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "appendix-b/appendix-b.lyx"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Third appendix
+\begin_inset CommandInset label
+LatexCommand label
+name "app:third-appendix"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand input
+filename "appendix-c/appendix-c.lyx"
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

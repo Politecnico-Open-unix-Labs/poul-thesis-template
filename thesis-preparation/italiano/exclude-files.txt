@@ -1,0 +1,5 @@
+exclude-files.txt
+.gitignore
+Makefile
+single-sided.patch
+LEGGIMI.md

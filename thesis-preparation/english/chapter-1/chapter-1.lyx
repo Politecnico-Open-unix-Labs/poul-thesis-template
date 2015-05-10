@@ -1,0 +1,164 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass book
+\options openright
+\use_default_options false
+\master ../thesis.lyx
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 2
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Indice
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language french
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Lorem ipsum
+\end_layout
+
+\begin_layout Standard
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Quisque lectus mi, aliquet ac lectus at, luctus ornare enim.
+ Donec eleifend ornare ante.
+ Curabitur non adipiscing risus.
+ Vivamus congue sem non magna tristique, ut pellentesque diam ornare.
+ Donec eget arcu congue, vulputate nisl et, aliquam tellus.
+ Morbi tincidunt odio quis mi hendrerit aliquet sit amet sit amet lorem.
+ Donec fringilla nec lectus nec lacinia.
+ Aliquam eu nunc euismod, tempus neque in, consequat velit.
+ Duis arcu quam, convallis quis ultricies vitae, semper in est.
+ Aliquam congue sagittis tortor, eget blandit lorem ullamcorper id.
+ Maecenas venenatis nec neque in consectetur.
+ Nulla nisl turpis, elementum a enim interdum, tincidunt vehicula tortor.
+ Praesent pulvinar mi sit amet condimentum placerat.
+ Curabitur mollis libero non auctor condimentum.
+ Suspendisse ante lectus, sodales vel mauris vel, pharetra laoreet eros.
+\end_layout
+
+\begin_layout Standard
+Nam lacinia nunc lorem, adipiscing ornare purus semper sit amet.
+ Morbi elementum augue vitae purus vehicula, ac varius leo sagittis.
+ Vestibulum eu orci in ipsum suscipit posuere.
+ Nulla quis erat rhoncus risus rutrum venenatis vel at lectus.
+ Vivamus pharetra tempor rhoncus.
+ Proin vitae turpis vitae lacus ultrices lacinia eu ac nunc.
+ Morbi id metus purus.
+ Pellentesque facilisis at arcu ut adipiscing.
+ Etiam eu nisi hendrerit, congue orci non, vehicula orci.
+ Interdum et malesuada fames ac ante ipsum primis in faucibus.
+ Aenean porttitor eu velit sed pulvinar.
+ Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+ inceptos himenaeos.
+ Maecenas ut pretium nisi, nec aliquam massa.
+ Maecenas vitae rhoncus lacus, non tempus turpis.
+\end_layout
+
+\begin_layout Standard
+Nam luctus in nisi dignissim congue.
+ Nullam dapibus dui sed ligula euismod congue.
+ Nulla vestibulum, justo a feugiat porttitor, massa nunc molestie lectus,
+ ultrices tempus turpis massa posuere augue.
+ Phasellus pulvinar vulputate ipsum, et eleifend sapien mollis vel.
+ Sed vitae eros id sapien dictum ultricies.
+ Aliquam ultricies nisl et bibendum imperdiet.
+ Cras a sem eros.
+ Quisque ut mauris a libero hendrerit tincidunt ac ac mi.
+ Mauris feugiat est sem, eu malesuada ipsum faucibus id.
+ Duis at ante et justo ullamcorper hendrerit sed ut turpis.
+ Donec eu dolor ac enim venenatis placerat venenatis vitae velit.
+ Curabitur lacus nisi, molestie id ligula vel, congue porta felis.
+ Nam eu aliquam justo.
+ Mauris sapien nulla, accumsan id eros a, porttitor interdum nunc.
+\end_layout
+
+\begin_layout Standard
+Vestibulum aliquam et mauris imperdiet consectetur.
+ Pellentesque convallis metus dignissim neque tincidunt, egestas commodo
+ odio rhoncus.
+ Integer purus leo, posuere non leo eget, aliquet condimentum neque.
+ Quisque non hendrerit quam.
+ Phasellus sit amet neque quam.
+ Suspendisse at sollicitudin ante.
+ Mauris fermentum turpis eget sem cursus tempor.
+ Fusce ac rutrum libero, sed adipiscing diam.
+\end_layout
+
+\begin_layout Standard
+Praesent quis ultricies diam, in hendrerit nibh.
+ Praesent diam dolor, bibendum sit amet pharetra a, viverra vel tortor.
+ Mauris id eleifend diam.
+ Maecenas tristique est massa, et lacinia ante tristique nec.
+ Praesent sapien odio, iaculis sollicitudin tristique vitae, mattis non
+ lacus.
+ Ut vehicula enim pellentesque, mollis ante vitae, mollis mauris.
+ Aenean imperdiet tellus lorem, eget malesuada ante rhoncus id.
+ Pellentesque dignissim nisl id pretium condimentum.
+ Sed congue commodo massa in rhoncus.
+ Phasellus elementum sollicitudin erat id rhoncus.
+ Fusce sem nunc, semper at tempor sit amet, congue nec orci.
+ Vivamus a egestas dui, vel viverra eros.
+ Sed sit amet eros sit amet nisi gravida ullamcorper.
+ Nam rutrum in mi sit amet vulputate.
+ Aenean pellentesque velit eu nisi eleifend faucibus sit amet vel dui.
+ Pellentesque sapien est, auctor at fringilla vel, vehicula ut urna 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "Dijkstra68Letters"
+
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document
